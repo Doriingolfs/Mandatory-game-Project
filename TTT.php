@@ -7,6 +7,7 @@
     <title>Tick Tack Toe</title>
 </head>
 <body>
+
     <form method="POST" action="index2.php">
         <?php
             $error = false; $x_wins = false; $o_wins = false; $count = 0;
