@@ -15,7 +15,7 @@
             {   
             
                 if ($id == 4 or $id == 7) print "<br>";                
-                print "<input name =$id type=text size=8";                            
+                print "<input name =$id type=text size=8 ";                            
                 
                 if (isset($_POST['submit']) and !empty($_POST[$id]))
                 {
@@ -26,7 +26,7 @@
                         
                         
                         for ($a = 1, $b = 2, $c = 3; $a<= 7, $b <= 8, $c <=9; $a+=3, $b+=3, $c+=3)
-                        {      /*                      
+                        {                          
                             if ($_POST["$a"] == $_POST["$b"] and $_POST["$b"] == $_POST["$c"]) 
                             {
                                 if ($_POST["$a"] == "x") 
@@ -38,13 +38,13 @@
                                     $o_wins = true;
                                 }
                             }
-                            */
+                            
                             
                         }
                         
 
                         for ($a = 1, $b = 4, $c = 7; $a<= 3, $b <= 6, $c <=9; $a+=1, $b+=1, $c+=1)
-                        {/*
+                        {
                             if ($_POST["$a"] == $_POST["$b"] and $_POST["$b"] == $_POST["$c"]) 
                             {
                                 if ($_POST["$a"] == "x") 
@@ -56,11 +56,11 @@
                                     $o_wins = true;
                                 }
                             }
-                            */
+                            
                         }
 
                         for ($a = 1, $b = 5, $c = 9; $a<= 3, $b <= 5, $c <=7; $a+=2, $b+=0, $c-=2)
-                        {/*
+                        {
                             if ($_POST["$a"] == $_POST["$b"] and $_POST["$b"] == $_POST["$c"]) 
                             {
                                 if ($_POST["$a"] == "x") 
@@ -72,7 +72,7 @@
                                     $o_wins = true;
                                 }                       
                             }   
-                            */                     
+                                                 
                         }
                         
                         
@@ -82,9 +82,10 @@
                 {
                     $error = true;
                 }              
-                
-            }                        
-        
+             
+
+            }  
+                          
             
             ?>
 
